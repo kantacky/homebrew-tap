@@ -4,8 +4,8 @@
 class GtfsUtils < Formula
   desc "CLI for the GTFS Utils"
   homepage "https://github.com/kantacky/gtfs-utils"
-  url "https://github.com/kantacky/gtfs-utils/archive/refs/tags/0.0.1.tar.gz"
-  sha256 "5a5680c7217eb8836e0e09a9c0ee3a3de63636c4ab38f6eaa3f244fc4d0a919d"
+  url "https://github.com/kantacky/gtfs-utils/archive/refs/tags/0.0.2.tar.gz"
+  sha256 "6136b45ae17696f75090dc0d8b2a8a30c7659c777872a571798ce0a762b7d7c8"
 
   depends_on xcode: ["16.0", :build]
 
