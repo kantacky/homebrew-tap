@@ -1,4 +1,4 @@
-class GTFS < Formula
+class Gtfs < Formula
   desc "GTFS CLI"
   homepage "https://github.com/kantacky/gtfs"
   version "0.1.0"
