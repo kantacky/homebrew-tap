@@ -1,9 +1,9 @@
 class Gitignore < Formula
   desc "List, search, and generate .gitignore templates"
   homepage "https://github.com/kantacky/gitignore-cli"
-  url "https://github.com/kantacky/gitignore-cli/releases/download/#{version}/gitignore-#{version}-macos-arm64.tar.gz"
-  version "0.1.1"
-  sha256 "ddb61b84cca9aff56006c4a551e333240e6c5f96944e9e1d353daefe6eba1f19"
+  url "https://github.com/kantacky/gitignore-cli/releases/download/0.1.2/gitignore-0.1.2-macos-arm64.tar.gz"
+  version "0.1.2"
+  sha256 "218dcadeeeaf2c95dff7c00c5e930df12d3e5f3a2d83a14c4f0a197a04861735"
   license "MIT"
 
   depends_on arch: :arm64
