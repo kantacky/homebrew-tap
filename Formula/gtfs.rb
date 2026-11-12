@@ -1,14 +1,12 @@
 class Gtfs < Formula
-  desc "GTFS CLI"
+  desc "Utilities for GTFS and GTFS-JP"
   homepage "https://github.com/kantacky/gtfs"
-  version "0.1.0"
+  url "https://github.com/kantacky/gtfs/releases/download/0.1.1/gtfs-0.1.1-macos-arm64.tar.gz"
+  version "0.1.1"
+  sha256 "0a2f46305746c9dddd5865df36e6181071a98164ad1583942c388483cb8fe571"
 
+  depends_on arch: :arm64
   depends_on macos: :tahoe # Package.swift の .macOS(.v26) に合わせる
-
-  on_arm do
-    url "https://github.com/kantacky/gtfs/releases/download/#{version}/gtfs-#{version}-arm64.tar.gz"
-    sha256 "ca8698ed04f63bdb57850b8db23790cb5256ff208e2f2283cdd14734d8d8f65d"
-  end
 
   def install
     bin.install "GTFSCLI" => "gtfs"
