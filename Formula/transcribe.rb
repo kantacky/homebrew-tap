@@ -1,17 +1,16 @@
 class Transcribe < Formula
-  desc "Transcribe CLI"
+  desc "Transcribe audio files in real time and print to standard output"
   homepage "https://github.com/kantacky/transcribe"
-  version "0.1.0"
+  url "https://github.com/kantacky/transcribe/releases/download/0.1.1/transcribe-0.1.1-macos-arm64.tar.gz"
+  version "0.1.1"
+  sha256 "85d800b2e53e34e6bd88281ad49a0d7c1082b9727d716855f78bade89b1a53f9"
+  license :cannot_represent
 
-  depends_on macos: :tahoe # Package.swift の .macOS(.v26) に合わせる
-
-  on_arm do
-    url "https://github.com/kantacky/transcribe/releases/download/#{version}/transcribe-#{version}-arm64.tar.gz"
-    sha256 "39a326a54ec3380df272984f26502728507ae3bfc52273f65854ce7c74a0b952"
-  end
+  depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   def install
-    bin.install "TranscribeCLI" => "transcribe"
+    bin.install "transcribe"
   end
 
   test do
