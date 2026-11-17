@@ -1,9 +1,9 @@
 class Transcribe < Formula
   desc "Transcribe audio files in real time and print to standard output"
   homepage "https://github.com/kantacky/transcribe"
-  url "https://github.com/kantacky/transcribe/releases/download/0.1.1/transcribe-0.1.1-macos-arm64.tar.gz"
-  version "0.1.1"
-  sha256 "85d800b2e53e34e6bd88281ad49a0d7c1082b9727d716855f78bade89b1a53f9"
+  url "https://github.com/kantacky/transcribe/releases/download/0.2.0/transcribe-0.2.0-macos-arm64.tar.gz"
+  version "0.2.0"
+  sha256 "50949c8f01009ba54d4af5a23a75f42d8967e0d03d70f566bd052b5a1d44da3b"
   license :cannot_represent
 
   depends_on arch: :arm64
